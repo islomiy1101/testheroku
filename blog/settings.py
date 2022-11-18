@@ -25,13 +25,12 @@ SECRET_KEY = 'django-insecure-b_-^)t^%r_fe5h$w-j%u6e))4tul@*1l1e(2ltp6#e72q$(e98
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['att-kafedra.heroku.app']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
     'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -156,66 +155,4 @@ STATICFILES_DIRS=[BASE_DIR/'static']
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-JAZZMIN_SETTINGS = {
-    "site_title": "NITS TEAM",
-    "site_header": "My Site Admin",
-    "site_brand": "NITS Family",
-    "site_logo": "images/logo.jfif",
-    "site_logo_classes": "img-circle",
-    "welcome_sign": "Muvaffaqiyatli ro'yxatdan o'tdingiz",
-    "copyright": "NITS TEAM inc",
-    "search_model": "news.Article",
-    "user_avatar": "images/logo.jfif",
-    "topmenu_links": [
-
-        # Url that gets reversed (Permissions can be added)
-        {"name": "Bosh sahifa",  "url": "http://127.0.0.1:8000/","new_window": True, "permissions": ["auth.view_user"]},
-
-        # external url that opens in a new window (Permissions can be added)
-        {"name": "Support", "url": "https://github.com/islomiy1101", "new_window": True},
-
-        # model admin to link to (Permissions checked against model)
-        {"model": "auth.User"},
-
-        # App with dropdown menu to all its models pages (Permissions checked against models)
-        {"app": "news"},
-    ],
-    "show_sidebar": True,
-    # "navigation_expanded": False,
-    # "hide_apps": ["news"],
-    "hide_models": ["Articles"],
-    "order_with_respect_to": ["news","auth",  "news.Article"],
-    "language_chooser": True,
-    "show_ui_builder": True,
-}
-JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": True,
-    "brand_small_text": False,
-    "brand_colour": "navbar-orange",
-    "accent": "accent-indigo",
-    "navbar": "navbar-white navbar-light",
-    "no_navbar_border": False,
-    "navbar_fixed": False,
-    "layout_boxed": False,
-    "footer_fixed": False,
-    "sidebar_fixed": False,
-    "sidebar": "sidebar-light-lime",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": False,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": True,
-    "theme": "pulse",
-    "dark_mode_theme": None,
-    "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
-        "info": "btn-outline-info",
-        "warning": "btn-outline-warning",
-        "danger": "btn-outline-danger",
-        "success": "btn-outline-success"
-    }
-}
+\
