@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{% block mycontent %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow p-4">
+                <h2 class="text-center">Login Form</h2>
+                <hr>
+                <a href="{% provider_login_url 'google' %}">Login with Google</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
